@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
-import heroImage from "@/assets/hero-image.jpg";
+
 import ethnicSaree from "@/assets/ethnic-saree.jpg";
 import westernDress from "@/assets/western-dress.jpg";
 import fusionOutfit from "@/assets/fusion-outfit.jpg";
@@ -35,16 +35,8 @@ const Home = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt="Fashion Hero"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-background/40" />
-        </div>
-        <div className="relative z-10 container text-center space-y-6">
+      <section className="relative py-20 flex items-center justify-center">
+        <div className="container text-center space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold">
             <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Where Tradition
@@ -53,7 +45,8 @@ const Home = () => {
             <span className="text-foreground">Meets Trend</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover curated collections that celebrate your unique style journey
+            Discover curated collections that celebrate your unique style
+            journey
           </p>
           <div className="flex gap-4 justify-center">
             <Button size="lg" asChild>
@@ -80,7 +73,10 @@ const Home = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {categories.map((category) => (
-            <Link key={category.slug} to={`/products?category=${category.slug}`}>
+            <Link
+              key={category.slug}
+              to={`/products?category=${category.slug}`}
+            >
               <Card className="group overflow-hidden transition-all hover:shadow-elegant cursor-pointer h-full">
                 <div className="aspect-[4/5] overflow-hidden">
                   <img
@@ -93,7 +89,9 @@ const Home = () => {
                   <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
                     {category.name}
                   </h3>
-                  <p className="text-muted-foreground">{category.description}</p>
+                  <p className="text-muted-foreground">
+                    {category.description}
+                  </p>
                 </CardContent>
               </Card>
             </Link>
@@ -105,11 +103,14 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-4xl font-bold">Experience Fashion Excellence</h2>
+            <h2 className="text-4xl font-bold">
+              Experience Fashion Excellence
+            </h2>
             <p className="text-lg text-muted-foreground">
-              At Nyra, we believe fashion is more than clothing—it's an expression of who you are. 
-              Our carefully curated collections blend timeless tradition with contemporary trends, 
-              ensuring you always look and feel your best.
+              At Nyra, we believe fashion is more than clothing—it's an
+              expression of who you are. Our carefully curated collections blend
+              timeless tradition with contemporary trends, ensuring you always
+              look and feel your best.
             </p>
             <Button size="lg" asChild>
               <Link to="/products">Start Shopping</Link>
