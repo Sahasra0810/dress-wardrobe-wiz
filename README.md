@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# Nyra - Where Tradition Meets Trend
 
-## Project info
+Modern e-commerce platform for fashion clothing, blending traditional elegance with contemporary style.
 
-**URL**: https://lovable.dev/projects/1fd59c32-000a-41c0-8ee0-518ab3926d8e
+## Features
 
-## How can I edit this code?
+- 🛍️ Product catalog with detailed views
+- 🔐 User authentication
+- 🛒 Shopping cart functionality
+- ❤️ Wishlist management
+- 📱 Responsive design for all devices
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+This project is built with modern web technologies:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1fd59c32-000a-41c0-8ee0-518ab3926d8e) and start prompting.
+- ⚡ **Vite** - Next Generation Frontend Tooling
+- ⚛️ **React** - UI Framework
+- 🔷 **TypeScript** - Type Safety
+- 🎨 **Tailwind CSS** - Utility-first CSS
+- 🎯 **shadcn/ui** - Re-usable components
+- 🗃️ **Supabase** - Backend & Authentication
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js 18+ (LTS recommended)
+- npm or bun package manager
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone <repository-url>
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to project directory
+cd nyra-website
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
+# or with bun
+bun install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+# or with bun
+bun run dev
 ```
 
-**Edit a file directly in GitHub**
+The development server will start at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Development
 
-**Use GitHub Codespaces**
+```bash
+# Run development server
+npm run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Build for production
+npm run build
 
-## What technologies are used for this project?
+# Preview production build
+npm run preview
 
-This project is built with:
+# Run linter
+npm run lint
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+src/
+├── assets/      # Static assets
+├── components/  # React components
+├── hooks/       # Custom React hooks
+├── lib/         # Utilities and helpers
+├── pages/       # Page components
+└── integrations/# Third-party integrations
+```
 
-Simply open [Lovable](https://lovable.dev/projects/1fd59c32-000a-41c0-8ee0-518ab3926d8e) and click on Share -> Publish.
+## Contributing
 
-## Can I connect a custom domain to my Lovable project?
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is proprietary software. All rights reserved.
