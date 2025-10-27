@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: ["dress-wardrobe-wiz.onrender.com"], // Add this line
   },
   plugins: [react()].filter(Boolean),
   resolve: {
